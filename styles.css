@@ -1,0 +1,482 @@
+:root {
+--text-color: #1a1c20;
+--link-color: #4a76ee;
+--background-color: #e6e6e6; 
+}
+
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: var(--background-color);
+    max-width: 2200px;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    margin-top: 35px;
+    height: 80px;
+}
+
+nav .left a {
+    color:var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a {
+    color:var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span{
+    margin-left: 5px;
+}
+
+/*SECTION 1: Hero*/
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 80px;
+    margin: 50px 0;
+    gap: 80px;
+    margin-bottom: 100px;
+}
+
+
+.hero-section .text {
+    flex: 8;
+    text-justify:auto;
+    font-size: large;
+
+}
+.hero-section .text p {
+    font-size:large;
+    text-align:justify;
+}
+
+.hero-section .text h2 {
+    font-size: 45px;
+}
+
+.hero-section .text .links {
+    margin-top: 33px;
+}
+
+.hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+.hero-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var (--text-color);
+}
+
+.hero-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero-section .headshot img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+/*Section 2: Skills */
+.skills-section {
+    padding: 0 80px;
+    margin-bottom: 130px;
+}
+
+.skills-section h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 230px;
+    padding: 10px 20px;
+    margin: 10px;
+    border:1.5px solid #c1c1c1;
+    border-radius: 8px;
+    
+}
+
+.skills-section .cells .cell img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.skills-section .cells .cell span {
+    font-size: 19px;
+    text-align: center;
+}
+
+.skills-section .cells a {
+    text-decoration: none;
+    color: (--link-color)inherit;
+}
+
+.skills-section .cells a .cell {
+    transition: transform 0.5s;
+}
+
+.skills-section .cells a .cell:hover {
+    transform: scale(1.1);
+}
+
+.skills-section .cells .cell span {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: auto;
+    text-align: center;
+    transition: 1s;
+}
+
+
+/*Section 3: Backround */
+.background-section {
+    padding: 0 80px;
+    margin-bottom: 100px;
+}
+ 
+.background-section h2 {
+    font-size: 33px;
+    margin-bottom: 50px;
+
+}
+
+.background-section .group {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.background-section .group .education-details {
+    text-align: center;
+    flex: 2;
+}
+
+.background-section .group .education-details img {
+    width: 205px;
+    border:1.5px solid #d3d3d3;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10PX;
+}
+
+.background-section .group .education-details p {
+    font-weight: normal;
+}
+
+.background-section .group .education-details p:nth-child(-n+2) {
+    font-weight: 600;
+}
+
+.background-section .group .text {
+    text-align: justify;
+    font-size: large;
+    flex: 8;
+}
+
+.background-section .group .text h2 {
+    text-align: left;
+    margin-bottom: 30px; 
+}
+
+ /*SECTION 4: Gallary*/
+.gallary-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+    margin-bottom: 100px;
+}
+
+.gallary-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.gallary-section .images {
+    display: flex;
+    object-fit: contain;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.gallary-section .images img { 
+    border-radius: 7%;   
+}
+
+.gallary-section .images img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+}
+/*SECTION 5: Contact*/
+.contact-section  {
+    padding: 0 80px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+    font-family: 'poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    padding: 10px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+
+.contact-section .group form button {
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+    color: aliceblue;
+    background-color: var(--link-color);
+    margin-top: 20px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contact-section .group form button:hover{
+    filter: brightness(0.8);
+}
+
+
+@media (max-width: 750px) {
+    /*section 1: hero*/
+
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .headshot img {
+        width: 300px;
+    }
+    /*section 2: skills*/
+    .skills-section .text {
+        text-align: justify;
+        
+    }
+
+    /*section 3: Background and education*/
+   .background-section {
+    text-align: center;
+   }
+
+   .background-section .group {
+    flex-direction: column;
+    }
+
+    .background-section .group .text h2 {
+    text-align: center;
+    }
+
+  /*SECTION 4: Gallary*/
+  .gallary-section {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.gallary-section h2 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+  
+
+     /*SECTION 5: Contact*/
+    .contact-section h2 { 
+        font-size: 25px;
+    }
+    .contact-section .group {
+        flex-direction: column;
+    }
+
+    .contact-section .group .text {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 600px) {
+    /*NAVBAR*/
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0 10px;
+    }
+
+    nav .right a span {
+        display: none
+    }
+
+    /*SECTION 1:Hero*/
+    .hero-section {
+        padding: 0 10px;
+    .hero-section .text h2 {
+            font-size: small;
+        }
+    }
+    
+    .hero-section   {
+        padding: 0 30px;
+    }
+
+    .hero-section .text .links {
+        text-align: center;
+        font-size: 15px;
+        text-justify:auto;
+    }
+
+    /*Section 2: Skills */
+    .skills-section {
+        padding: 0 30px;
+    }
+
+    .skills-section .cells  {
+        scale: (0.5);
+    }
+
+    .skills-section .text {
+        text-align: justify;
+    
+        font-size: 18px;
+    }
+
+    /*Section 3: education */
+
+    .background-section {
+        padding: 0 30px;
+    }
+
+    /*SECTION 4: Gallary*/
+    .gallary-section h2 {
+        text-align: center;
+    } 
+
+
+/*SECTION 4: Gallary*/
+
+.gallary-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.gallary-section h2 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.gallary-section .images img {
+    scale: 80%;
+}
+
+ /*SECTION 5: contact*/
+ .contact-section h2 {
+    font-size: 25px;
+ }
+.contact-section {
+    padding: 30px;
+}
+
+}
+
+   
+
+
+
+
